@@ -1,0 +1,8 @@
+server:
+  port: 8001
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    cache: false
+  aop:
+    proxy-target-class: true
