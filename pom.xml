@@ -17,6 +17,7 @@
         <module>microcloud-stock-8001</module>
         <module>microcloud-order-8002</module>
         <module>microcloud-user-8999</module>
+        <module>microcloud-api</module>
     </modules>
 
     <parent>
