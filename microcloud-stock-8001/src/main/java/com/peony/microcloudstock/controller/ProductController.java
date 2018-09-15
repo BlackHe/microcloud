@@ -23,7 +23,7 @@ public class ProductController {
     public Product getProduct(@PathVariable String productId){
         Product product = new Product();
         Random random = new Random();
-        product.setId(productId).setProductName("京东专卖产品-"+productId).setStockQty(Math.abs(random.nextDouble()*100000));
+        product.setId(productId).setProductName("京东专卖产品-"+productId).setStockQty(Double.parseDouble(random.nextInt(1000000)+""));
         return product;
     }
 }
