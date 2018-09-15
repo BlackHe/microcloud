@@ -1,5 +1,5 @@
 server:
-  port: 80
+  port: 8000
 spring:
   thymeleaf:
     prefix: classpath:/templates/
