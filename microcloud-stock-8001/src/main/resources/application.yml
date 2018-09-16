@@ -6,3 +6,10 @@ spring:
     cache: false
   aop:
     proxy-target-class: true
+  application:
+    name: microcloud-stock-${server.port}
+
+eureka:
+  client:
+    service-url:  #将库存服务注册进 eureka 服务内
+     defaultZone: http://localhost:7001/eureka
