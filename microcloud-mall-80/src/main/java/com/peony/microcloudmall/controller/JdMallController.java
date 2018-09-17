@@ -32,8 +32,9 @@ public class JdMallController {
 
     @RequestMapping("/page/{productId}")
     public String showHomePage(@PathVariable @NotNull String productId, Map<String,Object>  attributeMap){
-        Product product =  restTemplate.getForObject("http://localhost:8001/product/get/"+productId,Product.class,productId);
-        log.info("从库存微服务8001获取到的商品信息 = {}",product.toString());
+//        Product product =  restTemplate.getForObject("http://localhost:8001/product/get/"+productId,Product.class,productId);
+        Product product =  restTemplate.getForObject("http://MICROCLOUD-STOCK/product/get/"+productId,Product.class,productId);
+        log.info("从库存微服务 http://MICROCLOUD-STOCK/ 获取到的商品信息 = {}",product.toString());
         attributeMap.put("product",product);
         return "product";
     }

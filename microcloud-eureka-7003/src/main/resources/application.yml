@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: eureka-app.com #eureka服务端实例名
+    hostname: eureka-7003.com #eureka服务端实例名
   client:
     fetch-registry: false #表示自己就是注册中心，只需要维护实例即可
     register-with-eureka: false #eureka不需要将自己注册进去
