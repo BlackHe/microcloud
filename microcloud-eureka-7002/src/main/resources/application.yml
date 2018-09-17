@@ -1,5 +1,5 @@
 server:
-  port: 7001
+  port: 7002
 
 eureka:
   instance:
@@ -8,5 +8,5 @@ eureka:
     fetch-registry: false #表示自己就是注册中心，只需要维护实例即可
     register-with-eureka: false #eureka不需要将自己注册进去
     service-url:
-      defaultZone: http://eureka-7002.com:7002/eureka/,http://eureka-7003.com:7003/eureka/  #对外暴露eureka客户端注册地址
+      defaultZone: http://eureka-7001.com:7001/eureka/,http://eureka-7003.com:7003/eureka/  #对外暴露eureka客户端注册地址
 

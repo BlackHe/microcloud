@@ -12,4 +12,4 @@ spring:
 eureka:
   client:
     service-url:  #将库存服务注册进 eureka 服务内
-     defaultZone: http://localhost:7001/eureka
+     defaultZone: http://eureka-7001.com:7001/eureka/,http://eureka-7002.com:7002/eureka/,http://eureka-7003.com:7003/eureka/
