@@ -2,6 +2,7 @@ package com.peony.microcloudmall.config;
 
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.RandomRule;
+import com.netflix.loadbalancer.RetryRule;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,6 +20,7 @@ public class ConfigBean {
 
     @Bean
     public IRule getIRule(){
-        return new RandomRule();
+//        return new RandomRule();
+        return new RetryRule();
     }
 }
