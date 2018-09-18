@@ -5,7 +5,6 @@
 
 	<groupId>com.peony</groupId>
 	<artifactId>microcloud-eureka-7003</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>microcloud-eureka-7003</name>
