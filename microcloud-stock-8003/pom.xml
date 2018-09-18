@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.peony</groupId>
-    <artifactId>microcloud-stock-8002</artifactId>
+    <artifactId>microcloud-stock-8003</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>microcloud-stock-8002</name>
+    <name>microcloud-stock-8003</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
