@@ -19,7 +19,6 @@
         <module>microcloud-user-8999</module>
         <module>microcloud-api</module>
         <module>microcloud-eureka-7001</module>
-        <module>microcloud-eureka-7002</module>
         <module>microcloud-eureka-7003</module>
     </modules>
 
