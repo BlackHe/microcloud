@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="microcloud-api" />
+        <module name="microcloud-eureka-7001" />
+        <module name="microcloud-eureka-7003" />
+        <module name="microcloud-mall-80" />
+        <module name="microcloud-stock-8001" />
+        <module name="microcloud-stock-8002" />
+        <module name="microcloud-stock-8003" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
+      <module name="microcloud" target="1.8" />
+      <module name="microcloud-api" target="1.8" />
+      <module name="microcloud-eureka-7001" target="1.8" />
+      <module name="microcloud-eureka-7002" target="1.8" />
+      <module name="microcloud-eureka-7003" target="1.8" />
+      <module name="microcloud-eureka-7004" target="1.8" />
+      <module name="microcloud-mall-80" target="1.8" />
+      <module name="microcloud-order-8002" target="1.8" />
+      <module name="microcloud-stock-8001" target="1.8" />
+      <module name="microcloud-stock-8002" target="1.8" />
+      <module name="microcloud-stock-8003" target="1.8" />
+      <module name="microcloud-user-8999" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
