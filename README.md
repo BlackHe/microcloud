@@ -14,7 +14,7 @@
 *   RestTemplate
 
     ```
-    RestTemplate是springcloud远程调用的具体实现方式,主需要在容器启动的时候初始化即可使用
+    RestTemplate是springcloud远程调用的具体实现方式,只要在容器启动的时候初始化即可使用
     ```
 
 *   eureka
