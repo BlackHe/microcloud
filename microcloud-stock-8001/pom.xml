@@ -52,6 +52,8 @@
             <artifactId>microcloud-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+<<<<<<< HEAD
+=======
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -69,6 +71,7 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
+>>>>>>> 3774be13ffb016b58265c2043199f9ede032bd21
     </dependencies>
 
 

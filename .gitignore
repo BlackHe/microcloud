@@ -1,3 +1,5 @@
-.class
+*.class
 /target/
-
+*.idea/
+*.iml
+/libraries/

@@ -21,10 +21,14 @@ public class ProductController {
 
     @RequestMapping("/get/{productId}")
     public Product getProduct(@PathVariable String productId){
+<<<<<<< HEAD
+        return new Product(productId,"库存服务提供的产品-"+productId,800d);
+=======
         Product product = new Product();
         Random random = new Random();
         System.out.println(".............8001");
         product.setId(productId).setProductName("来自8001库存服务 --> 京东专卖产品-"+productId).setStockQty(Double.parseDouble(random.nextInt(1000000)+""));
         return product;
+>>>>>>> 3774be13ffb016b58265c2043199f9ede032bd21
     }
 }

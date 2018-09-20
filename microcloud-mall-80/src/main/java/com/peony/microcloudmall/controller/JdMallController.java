@@ -10,8 +10,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.client.RestTemplate;
 
+<<<<<<< HEAD
+import java.util.HashMap;
+=======
 import javax.validation.constraints.NotNull;
 import java.util.Map;
+>>>>>>> 3774be13ffb016b58265c2043199f9ede032bd21
 
 @Controller
 @RequestMapping("/jdMall")
@@ -23,10 +27,18 @@ public class JdMallController {
     private static final Logger log = LoggerFactory.getLogger(JdMallController.class);
 
 
-    @RequestMapping("/home")
+    @RequestMapping("/page/home")
     public String showHomePage(){
         return "home";
     }
+<<<<<<< HEAD
+    @RequestMapping("/page/{productId}")
+    public String showHomePage(@PathVariable String productId, HashMap<String,Object> map){
+        Product product = restTemplate.getForObject("http://localhost:8001/product/get/"+productId, Product.class);
+        map.put("product",product);
+        return "product";
+    }
+=======
 
 
 
@@ -41,4 +53,5 @@ public class JdMallController {
         return "product";
     }
 
+>>>>>>> 3774be13ffb016b58265c2043199f9ede032bd21
 }
