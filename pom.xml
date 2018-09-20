@@ -12,12 +12,13 @@
     <description>Demo project for Spring Boot</description>
 
     <modules>
-
-        <module>microcloud-mall-80</module>
-        <module>microcloud-stock-8001</module>
-        <module>microcloud-order-8002</module>
-        <module>microcloud-user-8999</module>
         <module>microcloud-api</module>
+        <module>microcloud-mall-80</module>
+        <module>microcloud-eureka-7001</module>
+        <module>microcloud-eureka-7003</module>
+        <module>microcloud-stock-8001</module>
+        <module>microcloud-stock-8002</module>
+        <module>microcloud-stock-8003</module>
     </modules>
 
     <parent>

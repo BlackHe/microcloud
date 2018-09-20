@@ -1,6 +1,13 @@
 server:
-  port: 80
+  port: 8000
+
 spring:
   thymeleaf:
     prefix: classpath:/templates/
     cache: false
+
+eureka:
+  client:
+    register-with-eureka: false  #商城服务是消费者，不对服务间提供访问，故不需要将自己注册进eureka,只是去发现服务
+    service-url:
+      defaultZone: http://eureka-7001.com:7001/eureka/,http://eureka-7002.com:7002/eureka/,http://eureka-7003.com:7003/eureka/
