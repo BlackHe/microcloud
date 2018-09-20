@@ -12,16 +12,24 @@
 
     ````
     
+*   RestTemplate
+
+    ```
+    RestTemplate是springcloud远程调用的具体实现方式
+    ```
+
 *   eureka
     
     ``````
-     注册中心，跟zookeeper最大的区别就是eureka采取了AP原则（高可用、分区容错性），是spring家族netfilex的产品
-      而zoopeeker采取的是CP原则（强一致性，分区容错性）
+     注册中心，分为服务发现服务器和待注册客户端，可以将单个eureka设置为高可用性的，也可以部署eureka集群，
+     将已注册的服务复制到集群的每个点。
+     跟zookeeper最大的区别就是eureka采取了AP原则（高可用、分区容错性），
+     是spring家族netflix的产品,而zoopeeker采取的是CP原则（强一致性，分区容错性）
     ``````
    
 *   ribbon
     ``````
-    基于客户端的负载均衡插件，内置7中负载算法，默认是RoundRibbonRule（轮询算法）,可通过
+    基于客户端的负载均衡组件，内置7中负载算法，默认是RoundRibbonRule（轮询算法）,可通过
     服务提供方（集群）注册进eureka（集群）的服务名找到主机并分发调用
     ``````
    
