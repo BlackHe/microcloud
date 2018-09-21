@@ -9,13 +9,12 @@
     springcloud的REST方式调用远程服务,是基于http协议的，虽然数据传输效率略低，
     但是，极大的降低了服务提供者与服务消费者之间的耦合性，使得远程服务调用完全与代码无关。
     而dubbo是采用RPC过程式调用，恰好与REST调用相反。
-
     ````
     
 *   RestTemplate
 
     ```
-    RestTemplate是springcloud远程调用的具体实现方式
+    RestTemplate是springcloud远程调用的具体实现方式,只要在容器启动的时候初始化即可使用
     ```
 
 *   eureka
