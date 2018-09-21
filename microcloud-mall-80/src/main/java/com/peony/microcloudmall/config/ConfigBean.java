@@ -19,6 +19,13 @@ public class ConfigBean {
         return new RestTemplate();
     }
 
+    /***
+     * rebbion请求分发算法
+     * randomRule   随机
+     * retryRule    重试
+     * roundRandomRule  轮询
+     * @return
+     */
     @Bean
     public IRule getIRule(){
 //        return new RandomRule();      //随机
