@@ -15,6 +15,7 @@
         <module>microcloud-api</module>
         <module>microcloud-mall-80</module>
         <module>microcloud-eureka-7001</module>
+        <module>microcloud-eureka-7002</module>
         <module>microcloud-eureka-7003</module>
         <module>microcloud-stock-8001</module>
         <module>microcloud-stock-8002</module>

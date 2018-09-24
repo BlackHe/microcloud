@@ -8,6 +8,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MyRule {
 
+    /***
+     * 自定义的负载策略，覆盖rebbion自带的策略
+     * @return
+     */
     @Bean
     public IRule getIRule(){
         return new RandomRule();
