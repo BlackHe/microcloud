@@ -35,5 +35,5 @@
 *  feign
 
     ```
-    feign是的http客户端调用更加简洁，方便
+    feign是对rebbon的上层封装，用controller-->service-->dao的风格调用远程服务，极大简化了不同服务之间的方法调用
     ```
