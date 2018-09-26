@@ -15,6 +15,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface StockService {
 
 
-    @RequestMapping(value = "/get/{productId}",method = RequestMethod.GET)
+    @RequestMapping(value = "/product/get/{productId}",method = RequestMethod.GET)
     Product getProduct(@PathVariable("productId") String productId);
 }
