@@ -34,7 +34,8 @@
     基于客户端的负载均衡组件，内置7中负载算法，默认是RoundRibbonRule（轮询算法）,可通过
     服务提供方（集群）注册进eureka（集群）的服务名找到主机并分发调用。
     关键注解：@RibbonClient(name="微服务名称"),@Configration, @LoadBalanced,@Bean
-    注：微服务名称是springboot应用的spring.application.name,如果是集群服务，则多个springboot的服务名设置为一个，共同注册进eureka
+    注：微服务名称是springboot应用的spring.application.name,如果是集群服务，则多个springboot的服务名设置为一个，
+        共同注册进eureka
     ``````
    
 *  feign
@@ -43,4 +44,8 @@
     feign是对rebbon的上层封装，用controller-->service-->dao的风格调用远程服务，极大简化了不同服务之间的方法调用
     默认支持负载均衡，默认策略为轮询。也是基于客户端的负载均衡。
     关键注解：@EnableFeignClients,@FeignClient
+    特点：当服务提供者集群中的某个单点出现故障，feign会自动去轮询下一个服务，而不会给调用者返回报错。当这个服务回归正常时，又可以
+         正常调用了。同样是轮询的负载策略，rebbion就没有这么智能了，rebbion如果遇到某个服务不可用时，会直接给调用者
+         跑出错误，这是个很大的弊端。从这一点上，feign的设计理念更符合spring cloud netfilx eureka高可用的初衷。也符合
+         spring mvc的程序模型。
     ```
