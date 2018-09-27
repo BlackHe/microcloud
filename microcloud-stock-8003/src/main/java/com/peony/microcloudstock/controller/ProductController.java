@@ -13,11 +13,11 @@ public class ProductController {
 
 
     @RequestMapping("/get/{productId}")
-    public Product getProduct(@PathVariable String productId){
+    public Product getProduct(@PathVariable String productId) {
         Product product = new Product();
         Random random = new Random();
         System.out.println(".............8003");
-        product.setId(productId).setProductName("来自8003库存服务 --> 京东专卖产品-"+productId).setStockQty(Double.parseDouble(random.nextInt(1000000)+""));
+        product.setId(productId).setProductName("来自8003库存服务 --> 京东专卖产品-" + productId).setStockQty(Double.parseDouble(random.nextInt(1000000) + ""));
         return product;
     }
 }

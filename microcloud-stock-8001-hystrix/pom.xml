@@ -4,14 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.peony</groupId>
-    <artifactId>microcloud-stock-8003</artifactId>
+    <artifactId>microcloud-stock-8001-hystrix</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>microcloud-stock-8003</name>
+    <name>microcloud-stock-8001-hystrix</name>
     <description>Demo project for Spring Boot</description>
-
-
     <parent>
         <groupId>com.peony</groupId>
         <artifactId>microcloud</artifactId>
@@ -62,7 +60,11 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
 
         <dependency>
@@ -96,4 +98,3 @@
 
 
 </project>
-

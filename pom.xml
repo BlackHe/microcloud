@@ -20,8 +20,8 @@
         <module>microcloud-stock-8001</module>
         <module>microcloud-stock-8002</module>
         <module>microcloud-stock-8003</module>
-        <module>microcloud-hystrix-9001</module>
         <module>microcloud-mall-feign-80</module>
+        <module>microcloud-stock-8001-hystrix</module>
     </modules>
 
     <parent>
