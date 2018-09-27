@@ -5,3 +5,7 @@
 *.idea/
 *.iml
 /libraries/
+*.lst
+*.jar
+.iml
+
