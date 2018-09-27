@@ -1,4 +1,4 @@
-package com.peony.microcloudstock.controller;
+package com.peony.microcloudstockhystrix.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
