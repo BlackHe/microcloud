@@ -1,11 +1,8 @@
 *.class
-.class
-/*.class
 /target/
 *.idea/
 *.iml
 /libraries/
 *.lst
 *.jar
-.iml
 
