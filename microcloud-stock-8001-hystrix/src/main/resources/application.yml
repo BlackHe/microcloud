@@ -17,5 +17,12 @@ eureka:
     instance-id: microcloud-stock-8001
     prefer-ip-address: true
 
+
 info:
   app.name: microcloud.peony.com
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
