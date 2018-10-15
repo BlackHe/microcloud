@@ -9,16 +9,22 @@ import org.springframework.stereotype.Component;
 public class EhcacheManage {
 
 
-
+    /**
+     * 切入点
+     */
     @Pointcut("@annotation(com.peony.microcloudstock.common.aop.Ehcache)")
     public void simplePointcut(){
     }
 
     @AfterReturning(pointcut = "simplePointcut()")
     public void simpleAdvice() {
-
+        System.out.println("后置通知......");
     }
 
+    @Before("simplePointcut()")
+    public void simleBefore(){
+        System.out.println("前置通知.......");
+    }
     @Around("simplePointcut()")
     public String beforeAop(ProceedingJoinPoint joinPoint){
         System.out.println("进入---AOP环绕通知切入");
