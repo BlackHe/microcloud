@@ -16,6 +16,9 @@ import java.util.Map;
 @RequestMapping("/jdMall")
 public class JdMallController {
 
+    /***
+     * 基于feign的service,将跨服务调用的过程，按照spring mvc的模式实现了
+     */
     @Autowired
     private StockService stockService;
 
@@ -25,7 +28,7 @@ public class JdMallController {
 
     @RequestMapping("/page/{productId}")
     public String showHomePage(@PathVariable @NotNull String productId, Map<String,Object>  attributeMap){
-        /** http://MICROCLOUD-STOCK/ 是微服务提供者注册在eureka上的服务名，可能是集群环境，但注册在eureka上的服务名是一个*/
+
 //        Product product =  restTemplate.getForObject("http://MICROCLOUD-STOCK/product/get/"+productId,Product.class,productId);
         Product product =  stockService.getProduct(productId);
         log.info("通过feign，从 http://MICROCLOUD-STOCK/服务获取到的商品信息 = {}",product.toString());

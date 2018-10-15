@@ -51,3 +51,9 @@
          跑出错误，这是个很大的弊端。从这一点上，feign的设计理念更符合spring cloud netfilx eureka高可用的初衷。也符合
          spring mvc的程序模型。
     ```
+
+* hystrix
+
+    ```
+    hystrix是基于客户端的断路器
+    ```
