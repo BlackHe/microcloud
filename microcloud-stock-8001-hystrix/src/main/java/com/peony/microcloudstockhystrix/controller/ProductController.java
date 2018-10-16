@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.UnsupportedEncodingException;
+import java.util.HashMap;
 import java.util.Random;
 
 @RestController
@@ -18,6 +20,11 @@ public class ProductController {
         return "aopTest";
     }
 
+    public static void main(String[] args) {
+        String ss = "china";
+        System.out.println( ss.startsWith("chii"));
+
+    }
     @RequestMapping("/get/{productId}")
     @HystrixCommand(fallbackMethod = "defaultProduct")
     public Product getProduct(@PathVariable String productId){

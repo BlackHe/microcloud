@@ -14,7 +14,8 @@ eureka:
 
 zuul:
   routes:
-    myproduct.serviceId: microcloud-stock
-    myproduct.path: /myproduct/**
+    microcloud-stock: /myproduct/**
+#    myproduct.serviceId: microcloud-stock
+#    myproduct.path: /myproduct/**
   ignored-services: "*"
 
