@@ -24,6 +24,7 @@
         <module>microcloud-stock-8001-hystrix</module>
         <module>microcloud-hystrixserver-9001</module>
         <module>microcloud-zuul-9900</module>
+        <module>microcloud-configserver-4001</module>
     </modules>
 
     <parent>
