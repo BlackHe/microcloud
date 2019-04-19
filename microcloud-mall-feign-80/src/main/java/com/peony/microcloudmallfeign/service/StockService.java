@@ -27,6 +27,6 @@ public interface StockService {
      * @param productId
      * @return
      */
-    @RequestMapping(value = "/product/get/{productId}",method = RequestMethod.GET)
+    @RequestMapping(value = "/product/get/{productId}", method = RequestMethod.GET)
     Product getProduct(@PathVariable("productId") String productId);
 }

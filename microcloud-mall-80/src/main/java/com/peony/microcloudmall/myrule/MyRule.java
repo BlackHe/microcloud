@@ -15,7 +15,7 @@ public class MyRule {
      */
     @Bean
     public IRule getIRule(){
-            return new RoundRobinRule();
-//        return new RandomRule();
+//            return new RoundRobinRule();
+        return new RandomRule();
     }
 }

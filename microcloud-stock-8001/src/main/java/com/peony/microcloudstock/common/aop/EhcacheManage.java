@@ -13,7 +13,7 @@ public class EhcacheManage {
      * 切入点
      */
     @Pointcut("@annotation(com.peony.microcloudstock.common.aop.Ehcache)")
-    public void simplePointcut(){
+    public void simplePointcut() {
     }
 
     @AfterReturning(pointcut = "simplePointcut()")
@@ -22,11 +22,12 @@ public class EhcacheManage {
     }
 
     @Before("simplePointcut()")
-    public void simleBefore(){
+    public void simleBefore() {
         System.out.println("前置通知.......");
     }
+
     @Around("simplePointcut()")
-    public String beforeAop(ProceedingJoinPoint joinPoint){
+    public String beforeAop(ProceedingJoinPoint joinPoint) {
         System.out.println("进入---AOP环绕通知切入");
         Object[] args = joinPoint.getArgs();
         Object result = null;
@@ -36,9 +37,8 @@ public class EhcacheManage {
             throwable.printStackTrace();
         }
         System.out.println("退出---AOP环绕通知切入");
-        return result == null ?  this.getClass().getName(): result.toString();
+        return result == null ? this.getClass().getName() : result.toString();
     }
-
 
 
 }

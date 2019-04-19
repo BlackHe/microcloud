@@ -27,9 +27,9 @@ public class ConfigBean {
      * @return
      */
     @Bean
-    public IRule getIRule(){
-//        return new RandomRule();      //随机
+    public IRule getIRule() {
+        return new RandomRule();      //随机
 //        return new RetryRule();
-        return new RoundRobinRule();    //轮询
+//        return new RoundRobinRule();    //轮询
     }
 }

@@ -15,32 +15,33 @@ import java.util.Random;
 public class ProductController {
 
     @RequestMapping("/list")
-    public String aopTest(){
+    public String aopTest() {
         System.out.println("进入方法ProductController.aopTest");
         return "aopTest";
     }
 
     public static void main(String[] args) {
         String ss = "china";
-        System.out.println( ss.startsWith("chii"));
+        System.out.println(ss.startsWith("chii"));
 
     }
+
     @RequestMapping("/get/{productId}")
     @HystrixCommand(fallbackMethod = "defaultProduct")
-    public Product getProduct(@PathVariable String productId){
+    public Product getProduct(@PathVariable String productId) {
         if ("888".equals(productId)) {
             throw new RuntimeException("888产品是测试服务熔断的产品");
         }
         Product product = new Product();
         Random random = new Random();
         System.out.println(".............8001");
-        product.setId(productId).setProductName("来自8001库存服务 --> 专卖产品-"+productId).setStockQty(Double.parseDouble(random.nextInt(1000000)+""));
+        product.setId(productId).setProductName("来自8001库存服务 --> 专卖产品-" + productId).setStockQty(Double.parseDouble(random.nextInt(1000000) + ""));
         return product;
     }
 
-    public Product defaultProduct( String productId) {
+    public Product defaultProduct(String productId) {
         Product product = new Product();
-        product.setId(productId).setProductName("4444-原服务熔断-这是默认值.........").setStockQty(-1000d);
+        product.setId(productId).setProductName("来自8001库存服务 -->原服务熔断-这是默认值.........").setStockQty(-1000d);
         return product;
     }
 }
