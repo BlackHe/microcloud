@@ -54,8 +54,9 @@
          spring mvc的程序模型。
     ```
 
-* hystrix
+* hystrix/hystrix dashboard
 
     ```
-    hystrix是基于客户端的断路器
+    hystrix是基于客户端的断路器,旨在应用服务出现异常时，可以及时熔断，采用默认的熔断服务直接返回，不至于在调用端发生级联失败或调用超时
+    hystrix dashboard 提供了微服务的运行可视化界面，能通过界面实时监测服务的可用性，熔断次数等等
     ```
