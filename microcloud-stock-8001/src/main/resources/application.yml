@@ -9,13 +9,16 @@ spring:
   application:
     name: microcloud-stock
 
-eureka:
-  client:
-    service-url:  #将库存服务注册进 eureka 服务内
-     defaultZone: http://eureka-7001.com:7001/eureka/,http://eureka-7002.com:7002/eureka/,http://eureka-7003.com:7003/eureka/
-  instance:
-    instance-id: microcloud-stock-8001
-    prefer-ip-address: true
+#eureka:
+#  client:
+#    service-url:  #将库存服务注册进 eureka 服务内
+#     defaultZone: http://eureka-7001.com:7001/eureka/,http://eureka-7002.com:7002/eureka/,http://eureka-7003.com:7003/eureka/
+#  instance:
+#    instance-id: microcloud-stock-8001
+#    prefer-ip-address: true
 
 info:
   app.name: microcloud.peony.com
+
+sys:
+  env: local
